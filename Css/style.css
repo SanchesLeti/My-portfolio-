@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.highlight {
+    color: rgb(145, 9, 145);
+    font-weight: 700;
+    font-style: italic
+}
+.container{
+    padding-top: 40px;
+    justify-content: center;
+}
+.profilepic {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    filter: drop-shadow(10px 8px 6px rgb(145, 9, 145));
+}
