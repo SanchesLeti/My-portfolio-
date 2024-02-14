@@ -1,5 +1,12 @@
+:root {
+  --primary-color: black;
+  --secondary-color: rgb(145, 9, 145);
+  --heading-font:"Sedgwick Ave", cursive;
+  --secondary-font:"Caveat", cursive;
+}
+
 body {
-  background-color: black;
+  background-color: var(--primary-color);
   color: white;
   padding-left: 80px;
   padding-right: 10px;
@@ -7,14 +14,14 @@ body {
 }
 
 h1  {
-  font-family: "Sedgwick Ave", cursive;
+  font-family:  var(--heading-font);
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
 }
 
 h2, h3 {
-  font-family: "Caveat", cursive;
+  font-family: var(--secondary-font);
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -24,7 +31,7 @@ h2, h3 {
  }
 
 .highlight {
-  color: rgb(145, 9, 145);
+  color: var(--secondary-color);
   font-weight: 700;
   font-style: italic;
 }
@@ -36,29 +43,23 @@ h2, h3 {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgb(145, 9, 145), 0 0 25px rgb(145, 9, 145),
-    0 0 50px rgb(145, 9, 145), 0 0 100px rgb(145, 9, 145),
-    0 0 200px rgb(145, 9, 145);
+  box-shadow: 0 0 5px var(--secondary-color), 0 0 25px var(--secondary-color),
+    0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
+    0 0 200px var(--secondary-color);
 }
 .profilepic:hover {
   filter: contrast(100%);
   transform: scale(1.2);
-  box-shadow: 0 0 5px rgb(145, 9, 145), 0 0 25px rgb(145, 9, 145),
-    0 0 50px rgb(145, 9, 145), 0 0 100px rgb(145, 9, 145),
-    0 0 200px rgb(145, 9, 145);
-  cursor: grab;
+  box-shadow: 0 0 5px var(--secondary-color), 0 0 25px var(--secondary-color),
+    0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
+    0 0 200px var(--secondary-color);
 }
 .bigmargin {
   margin-left: 5px;
 }
 .underline:hover {
-  text-decoration: underline 2px rgb(145, 9, 145);
+  text-decoration: underline 2px var(--secondary-color);
 }
-.introduction {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-}
-
 @media (max-width: 771px) {
   body {
     text-align: center;
