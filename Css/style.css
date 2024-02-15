@@ -20,7 +20,7 @@ h1  {
   font-size: 100px;
 }
 
-h2, h3 {
+h2, h3, p {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -28,6 +28,16 @@ h2, h3 {
 }
  h3{
   font-size: 50px;
+ }
+ p {
+  font-size: 30px;
+    font-family: "Gayathri", sans-serif;
+  font-weight: 100;
+  font-style: normal
+
+ }
+ .aboutme h1 {
+  font-size: 60px;
  }
 
 .highlight {
@@ -47,6 +57,13 @@ h2, h3 {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
+.profilepic2 {
+  height: 370px;
+  width: 350px;
+  border-radius: 10px;
+  border: solid var(--secondary-color);
+
+}
 .profilepic:hover {
   filter: contrast(100%);
   transform: scale(1.2);
@@ -54,12 +71,30 @@ h2, h3 {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
+
+.diplomas-img{
+  height: 350px;
+  width: 450px;
+  border-radius: 10px;
+  
+}
+
+.diplomas-img:hover {
+  filter: contrast(100%);
+  transform: scale(1.2);
+  box-shadow: 0 0 5px var(--secondary-color), 0 0 25px var(--secondary-color),
+    0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
+    0 0 200px var(--secondary-color);
+}
+
 .bigmargin {
   margin-left: 5px;
 }
+
 .underline:hover {
   text-decoration: underline 2px var(--secondary-color);
 }
+
 @media (max-width: 771px) {
   body {
     text-align: center;
@@ -69,10 +104,14 @@ h2, h3 {
     text-align: center;
   }
   h1 {
-    font-size: 50px;
+    font-size: 90px;
     margin-bottom: 10px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 25px;
   }
 }
