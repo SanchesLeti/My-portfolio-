@@ -1,8 +1,9 @@
 :root {
   --primary-color: black;
   --secondary-color: rgb(145, 9, 145);
-  --heading-font:"Sedgwick Ave", cursive;
-  --secondary-font:"Caveat", cursive;
+  --heading-font: "Sacramento", cursive;
+  --secondary-font: "DM Serif Display", serif;;
+  --third-font: "Gayathri", sans-serif;
 }
 
 body {
@@ -13,56 +14,97 @@ body {
   margin-top: 10px;
 }
 
-h1  {
-  font-family:  var(--heading-font);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
+h1 {
+  font-family: var(--heading-font);
+  word-spacing: 10px;
+  font-size: 90px;
+}
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+   word-spacing: 6px;
+
+}
+h3 {
+  font-family: var(--heading-font);
+  font-size: 90px;
 }
 
-h2, h3, p {
-  font-family: var(--secondary-font);
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+p {
+  font-family: var(--third-font);
+  font-size: 40px;
 }
- h3{
-  font-size: 50px;
- }
- p {
-  font-size: 30px;
-    font-family: "Gayathri", sans-serif;
-  font-weight: 100;
-  font-style: normal
 
- }
- .aboutme h1 {
-  font-size: 60px;
- }
+.intro h1:hover {
+  transition: font-family 10s ease-in;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;  
+  cursor: grab;
+  font-weight: bolder;
+}
+.aboutme {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 .highlight {
   color: var(--secondary-color);
   font-weight: 700;
-  font-style: italic;
 }
 .highlight:hover {
   cursor: grab;
 }
-
+.myname {
+  transition: font-family 10s ease-in;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+.myname:hover {
+  cursor: grab;
+  transition: font-family 10s ease-in;
+  background-image: linear-gradient(
+    -225deg,
+    #fff800 0%,
+    #ff1361 29%,
+    #44107a 67%,
+    #231557 100%
+  );
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
 .profilepic {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--secondary-color), 0 0 25px var(--secondary-color),
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
 .profilepic2 {
-  height: 370px;
-  width: 350px;
+  height: 450px;
+  width: 400px;
   border-radius: 10px;
   border: solid var(--secondary-color);
-
 }
 .profilepic:hover {
   filter: contrast(100%);
@@ -71,12 +113,10 @@ h2, h3, p {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
-
-.diplomas-img{
+.diplomas-img {
   height: 350px;
   width: 450px;
   border-radius: 10px;
-  
 }
 
 .diplomas-img:hover {
@@ -94,7 +134,9 @@ h2, h3, p {
 .underline:hover {
   text-decoration: underline 2px var(--secondary-color);
 }
-
+.paddingtop {
+  padding-top: 150px;
+}
 @media (max-width: 771px) {
   body {
     text-align: center;
