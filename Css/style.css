@@ -1,8 +1,10 @@
+/*general styling*/
+
 :root {
   --primary-color: black;
   --secondary-color: rgb(145, 9, 145);
   --heading-font: "Sacramento", cursive;
-  --secondary-font: "DM Serif Display", serif;;
+  --secondary-font: "DM Serif Display", serif;
   --third-font: "Gayathri", sans-serif;
 }
 
@@ -20,10 +22,9 @@ h1 {
   font-size: 90px;
 }
 h2 {
-    font-family: var(--secondary-font);
-    font-size: 40px;
-   word-spacing: 6px;
-
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  word-spacing: 6px;
 }
 h3 {
   font-family: var(--heading-font);
@@ -34,6 +35,11 @@ p {
   font-family: var(--third-font);
   font-size: 40px;
 }
+.hrbreak {
+  color: var(--secondary-color);
+  border-top: 1px solid var(--secondary-color); 
+}
+/*indexpage styling*/
 
 .intro h1:hover {
   transition: font-family 10s ease-in;
@@ -47,13 +53,13 @@ p {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;  
+  animation: textclip 2s linear infinite;
   cursor: grab;
   font-weight: bolder;
 }
 .aboutme {
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .highlight {
@@ -64,6 +70,7 @@ p {
   cursor: grab;
 }
 .myname {
+  font-family: (var(--heading-font));
   transition: font-family 10s ease-in;
   background-image: linear-gradient(
     -225deg,
@@ -78,6 +85,7 @@ p {
   animation: textclip 2s linear infinite;
 }
 .myname:hover {
+  font-family: (var(--heading-font));
   cursor: grab;
   transition: font-family 10s ease-in;
   background-image: linear-gradient(
@@ -118,7 +126,6 @@ p {
   width: 450px;
   border-radius: 10px;
 }
-
 .diplomas-img:hover {
   filter: contrast(100%);
   transform: scale(1.2);
@@ -126,7 +133,12 @@ p {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
-
+.skills-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  padding: 20px;
+}
 .bigmargin {
   margin-left: 5px;
 }
@@ -137,16 +149,14 @@ p {
 .paddingtop {
   padding-top: 150px;
 }
-@media (max-width: 771px) {
+@media (max-width: 1500px) {
   body {
     text-align: center;
     justify-content: center;
   }
-  .content {
-    text-align: center;
-  }
+
   h1 {
-    font-size: 90px;
+    font-size: 130px;
     margin-bottom: 10px;
   }
   h2 {
@@ -154,6 +164,12 @@ p {
     margin-bottom: 10px;
   }
   p {
-    font-size: 25px;
+    font-size: 55px;
+  }
+  .col-image {
+    display: none;
+  }
+  .col-center {
+    text-align: center;
   }
 }
