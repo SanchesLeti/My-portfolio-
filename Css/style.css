@@ -35,10 +35,27 @@ p {
   font-family: var(--third-font);
   font-size: 40px;
 }
+.highlight {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.highlight:hover {
+  cursor: grab;
+}
 .hrbreak {
   color: var(--secondary-color);
-  border-top: 1px solid var(--secondary-color); 
+  border-top: 1px solid var(--secondary-color);
 }
+.bigmargin {
+  margin-left: 5px;
+}
+.underline:hover {
+  text-decoration: underline 2px var(--secondary-color);
+}
+.paddingtop {
+  padding-top: 150px;
+}
+
 /*indexpage styling*/
 
 .intro h1:hover {
@@ -60,14 +77,6 @@ p {
 .aboutme {
   margin-top: 100px;
   margin-bottom: 90px;
-}
-
-.highlight {
-  color: var(--secondary-color);
-  font-weight: 700;
-}
-.highlight:hover {
-  cursor: grab;
 }
 .myname {
   font-family: (var(--heading-font));
@@ -100,6 +109,8 @@ p {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
 }
+/* Images CSS*/
+
 .profilepic {
   height: 450px;
   width: 450px;
@@ -139,19 +150,6 @@ p {
   border-radius: 10px;
   padding: 20px;
 }
-
-.bigmargin {
-  margin-left: 5px;
-}
-.underline:hover {
-  text-decoration: underline 2px var(--secondary-color);
-}
-.paddingtop {
-  padding-top: 150px;
-}
-
-/* Projects page*/
-
 .project-img {
   height: 450px;
   width: 700px;
@@ -164,6 +162,8 @@ p {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
+/* Projects page*/
+
 
 
 @media (max-width: 1500px) {
@@ -190,7 +190,7 @@ p {
     text-align: center;
   }
   .project-img {
-  height: 300px;
-  width: 500px;
-}
+    height: 300px;
+    width: 500px;
+  }
 }
