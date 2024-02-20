@@ -16,7 +16,7 @@ body {
   margin-top: 10px;
 }
 
-h1{
+h1 {
   font-family: var(--heading-font);
   word-spacing: 10px;
   font-size: 90px;
@@ -164,8 +164,6 @@ p {
 }
 /* Projects page*/
 
-
-
 @media (max-width: 1500px) {
   body {
     text-align: center;
@@ -187,16 +185,19 @@ p {
     font-size: 20px;
   }
   .profilepic {
-  height: 200px;
-  width: 200px;
-  
+    height: 200px;
+    width: 200px;
   }
   .col-center {
     text-align: center;
   }
   .project-img {
-    height: 300px;
-    width: 100;
+    height: 200px;
+    width: 150;
+  }
+  .skills-img {
+    height: 80px;
+    width: 80px;
   }
   .col-image {
     display: none;
@@ -204,5 +205,7 @@ p {
   .myname {
     font-size: 70px;
   }
+  .paddingtop {
+    padding-top: 10px;
+  }
 }
-
