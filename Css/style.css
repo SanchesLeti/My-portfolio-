@@ -208,4 +208,21 @@ p {
   .paddingtop {
     padding-top: 10px;
   }
+  .intro h1 {
+    font-size: 40px;
+    transition: font-family 10s ease-in;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    cursor: grab;
+    font-weight: bolder;
+  }
 }
