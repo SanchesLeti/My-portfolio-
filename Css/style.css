@@ -223,6 +223,5 @@ p {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     cursor: grab;
-    font-weight: bolder;
   }
 }
