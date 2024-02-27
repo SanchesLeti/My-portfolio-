@@ -165,9 +165,8 @@ p {
 /* Projects page*/
 /*contact page*/
 footer .theend {
-  color: aliceblue;
+  color: blue;
   text-align: center;
-  font-size: 90px;
 }
 
 @media (max-width: 1500px) {
