@@ -162,11 +162,18 @@ p {
     0 0 50px var(--secondary-color), 0 0 100px var(--secondary-color),
     0 0 200px var(--secondary-color);
 }
-/* Projects page*/
-/*contact page*/
-footer .theend {
-  color: blue;
-  text-align: center;
+
+footer {
+  text-align: right;
+}
+.icons {
+  color: var(--secondary-color);
+  font-size: 28px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.icons:hover {
+  font-size: 40px;
 }
 
 @media (max-width: 1500px) {
@@ -228,5 +235,10 @@ footer .theend {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     cursor: grab;
+  }
+  footer {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
   }
 }
